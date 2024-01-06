@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>납품자 정보</title>
+</head>
+<body>
+  <fieldset>
+    <legend>납품자 정보</legend>
+      <ol>
+        <li><label for="납품자명">납품자명:</label>
+          <input type="text" name="납품자명" id="납품자명">
+        </li>
+
+        <br>
+          <li><label for="email">email:</label>
+          <input type="email" name="email" id="email" placeholder="answer@naver.com">
+          </li>
+
+        <br>
+          <li><label for="홈페이지">홈페이지:</label>
+          <input type="text" name="홈페이지" id="홈페이지" value="http://">
+          </li>
+
+        <br>
+          <li><label for="지역">지역:</label>
+          <select id="지역">
+            <option value="부산">부산</option>
+            <option value="서울">서울</option>
+            <option value="전주">전주</option>
+            <option value="화성">화성</option>
+          </select>
+          </li>
+      </ol>
+  </fieldset>
+
+  <fieldset>
+    <legend>납품 정보</legend>
+    <ul>
+      <li><label for="상품명">상품명:</label>
+      <input type="text" name="상품명" id="상품명"></li>
+    </ul>
+
+    <ul>
+      <li><label for="납품수량">납품수량:</label>
+      <input type="text" name="납품수량" id="납품수량" placeholder="최소 100"></li>
+    </ul>
+
+    <ul>
+      <li><label for="납품등급">납품등급:</label>
+        <input type="range" name="납품등급" id="납품등급"></li>
+    </ul>
+
+    <ul>
+      <li><label>기타사항:</label>
+        <label>
+<textarea cols="20">
+</textarea>
+        </label></li>
+    </ul>
+  </fieldset>
+
+  <br><button type="submit">send message</button>
+</body>
+</html>
