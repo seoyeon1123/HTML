@@ -5,24 +5,129 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>로그인</title>
+
 
     <style>
-        div {
-            border: 10px solid green;
-            font-size: 60px;
+        body{
+            display: flex;
+            align-items:center;
+            flex-direction: column;
         }
-        @media(max-width: 800px){
-            div{
-            display: none;
-               }
+        header {
+            color: rebeccapurple;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #article {
+            width: 500px;
+            background-color: lavender;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+
+            text-align: center;
+            border-bottom: 1px solid rebeccapurple;
+            margin: 20px;
+            font-size: 20px;
+
+
+            button {
+                color: white;
+                background-color: rebeccapurple;
+                border: 1px solid rebeccapurple;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        footer {
+            text-align: center;
+
+            button {
+                color: rebeccapurple;
+                background-color: white;
+                border: 1px solid rebeccapurple;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-bottom: 20px;
+
+            }
+        }
+
+        #login {
+            display: flex;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        span{
+            font-size: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #password-input{
+            margin-top: 5px;
+        }
+
+        #security {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 5px;
+            margin-left: 40px;
         }
 
     </style>
 </head>
+
 <body>
-<div>
-    Responsive
+<header>로그인</header>
+<div id="article">
+    <section id="login">
+        <div>
+
+
+        <span>
+    <label for="id">아이디</label>
+    <input type="text" name="login" id="id">
+
+        </span>
+        <span>
+            <div id="password-input">
+
+
+            <label for="password">비밀번호</label>
+            <input type="password" name="login" id="password">
+            </div>
+        </span>
+
+        <span id="security">
+            <input type="checkbox" name="login" id="보안접속">
+            <label for="보안접속">보안접속</label>
+        </span>
+
+        </div>
+
+        <br>
+        <button type="submit">회원 로그인</button>
+
+    </section>
+
+    <footer>
+        <button type="button">아이디 찾기</button>
+        <button type="button">비밀번호 찾기</button>
+        <button type="button">회원가입</button>
+    </footer>
 </div>
 </body>
 </html>
